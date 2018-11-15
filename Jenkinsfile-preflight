@@ -6,7 +6,7 @@ pipeline {
       steps { 
         echo "Prerequisites" 
         sh "echo show shellENV value: ${shellENV}"
-        sh 'ssh -tq -o "BatchMode yes" localhost "${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false"'
+        sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\""
 //        sh '''#!/bin/bash
 //             export TERM=vt100
 //        ]    export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
