@@ -8,7 +8,7 @@ pipeline {
       steps { 
         echo "Prerequisites" 
         sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\""
-        sh "ssh root@localhost \"/var/root/autovpnroute\""
+//        sh "ssh root@localhost \"/var/root/autovpnroute && exit \""
 //        sh '''#!/bin/bash
 //             export TERM=vt100
 //        ]    export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -34,7 +34,7 @@ pipeline {
           usernamePassword(credentialsId: okta_creds, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
     ]){   
        echo "Run Migration Preflight gocwb" 
-       sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword ${AD_PASSWORD} -oktaPassword ${OKTA_PASSWORD} && exit \""
+       sh "${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword ${AD_PASSWORD} -oktaPassword ${OKTA_PASSWORD} " 
      }
      }  
      post { 
