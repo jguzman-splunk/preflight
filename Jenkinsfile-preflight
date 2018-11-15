@@ -5,6 +5,7 @@ pipeline {
     stage('Prerequisites'){ 
       steps { 
         echo "Prerequisites" 
+        sh "echo ${shellENV}"
         sh 'ssh -tq -o "BatchMode yes" localhost "${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false"'
 //        sh '''#!/bin/bash
 //             export TERM=vt100
