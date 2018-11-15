@@ -26,26 +26,49 @@ pipeline {
       } 
    } 
 
-    stage('Run Migration Preflight gocwb script'){ 
+    stage('Run Migration Preflight gocwb'){ 
      steps { 
        withCredentials([
           usernamePassword(credentialsId: ad_creds, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
           usernamePassword(credentialsId: okta_creds, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
     ]){   
-       echo "Run Migration Preflight gocwb script" 
+       echo "Run Migration Preflight gocwb" 
        sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword ${AD_PASSWORD} -oktaPassword ${OKTA_PASSWORD} && exit \""
      }
      }  
      post { 
        success { 
-         echo "Now Archiving..." 
+         echo "Preflight gocwb completed" 
        } 
      } 
     }
-    stage('Archive to Nexus'){ 
+    stage('Analyze Result and Review'){ 
       steps { 
-        echo "Code Archive to Nexus" 
+        echo "Analyze Result and Review" 
+        timeout(time:5, unit:'MINUTES') {
+           input message: "Have you done Review?", ok: "Yes"
       } 
-    } 
+    }
+    stage('Determine If Multisite is True Or False On Legacy Stack'){ 
+      steps { 
+        echo "Determine If Multisite is True Or False On Legacy Stack" 
+        timeout(time:5, unit:'MINUTES') {
+           input message: "Have you checked Multisite is True Or False On Legacy Stack?", ok: "Yes"
+      } 
+    }
+    stage('Define Sitemapping in Hiera'){ 
+      steps { 
+        echo "Define Sitemapping in Hiera" 
+        timeout(time:5, unit:'MINUTES') {
+           input message: "Have you create and push cluster_master.yaml?", ok: "Yes"        
+      } 
+    }
+    stage('Update Jira & Spreadsheet'){ 
+      steps { 
+        echo "Update Jira & Spreadsheet"
+        timeout(time:5, unit:'MINUTES') {
+           input message: "Have you updated Jira and Spreadsheet?", ok: "Yes"
+      } 
+    }
   }
 }
