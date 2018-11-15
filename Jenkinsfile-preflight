@@ -1,11 +1,12 @@
-def shellENV = "export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+def ad_creds = 'AD_CREDS'
+def okta_creds = 'OKTA_CREDS'
+def shellENV = "export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools"
 pipeline { 
   agent any 
   stages{ 
     stage('Prerequisites'){ 
       steps { 
         echo "Prerequisites" 
-        sh "echo show shellENV value: ${shellENV}"
         sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\""
 //        sh '''#!/bin/bash
 //             export TERM=vt100
@@ -24,10 +25,16 @@ pipeline {
         }   
       } 
    } 
-   stage('Run Migration Preflight gocwb script'){ 
+
+    stage('Run Migration Preflight gocwb script'){ 
      steps { 
+       withCredentials([
+          usernamePassword(credentialsId: ad_creds, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
+          usernamePassword(credentialsId: okta_creds, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
+    ]){   
        echo "Run Migration Preflight gocwb script" 
-       sh 'ssh -tq -o "BatchMode yes" localhost "${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword env.AD_PASSWORD -oktaPassword env.OKTA_PASSWORD"'
+       sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword ${AD_PASSWORD} -oktaPassword ${OKTA_PASSWORD} && exit \""
+     }
      }  
      post { 
        success { 
@@ -40,5 +47,5 @@ pipeline {
         echo "Code Archive to Nexus" 
       } 
     } 
-  } 
+  }
 }
