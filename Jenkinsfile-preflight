@@ -1,10 +1,11 @@
+def shellENV = "export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 pipeline { 
   agent any 
   stages{ 
     stage('Prerequisites'){ 
       steps { 
         echo "Prerequisites" 
-        sh 'ssh -tq -o "BatchMode yes" localhost "export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false"'
+        sh 'ssh -tq -o "BatchMode yes" localhost "${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false"'
 //        sh '''#!/bin/bash
 //             export TERM=vt100
 //        ]    export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -16,15 +17,16 @@ pipeline {
     } 
     stage('Check Forwarder FQDN'){ 
       steps { 
-        echo "Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs" 
+        echo "Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs" 
         timeout(time:5, unit:'MINUTES') {
            input message: "Are Customer Forwarders Configured To Forward Events To Correct FQDNs", ok: "Yes"
         }   
       } 
    } 
-   stage('Build'){ 
+   stage('Run Migration Preflight gocwb script'){ 
      steps { 
-       echo "Building ..." 
+       echo "Run Migration Preflight gocwb script" 
+       sh 'ssh -tq -o "BatchMode yes" localhost "${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword env.AD_PASSWORD -oktaPassword env.OKTA_PASSWORD"'
      }  
      post { 
        success { 
