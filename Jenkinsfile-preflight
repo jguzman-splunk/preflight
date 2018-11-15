@@ -47,6 +47,7 @@ pipeline {
         echo "Analyze Result and Review" 
         timeout(time:5, unit:'MINUTES') {
            input message: "Have you done Review?", ok: "Yes"
+        }
       } 
     }
     stage('Determine If Multisite is True Or False On Legacy Stack'){ 
@@ -54,13 +55,15 @@ pipeline {
         echo "Determine If Multisite is True Or False On Legacy Stack" 
         timeout(time:5, unit:'MINUTES') {
            input message: "Have you checked Multisite is True Or False On Legacy Stack?", ok: "Yes"
+        }
       } 
     }
     stage('Define Sitemapping in Hiera'){ 
       steps { 
         echo "Define Sitemapping in Hiera" 
         timeout(time:5, unit:'MINUTES') {
-           input message: "Have you create and push cluster_master.yaml?", ok: "Yes"        
+           input message: "Have you create and push cluster_master.yaml?", ok: "Yes"
+        }        
       } 
     }
     stage('Update Jira & Spreadsheet'){ 
@@ -68,6 +71,7 @@ pipeline {
         echo "Update Jira & Spreadsheet"
         timeout(time:5, unit:'MINUTES') {
            input message: "Have you updated Jira and Spreadsheet?", ok: "Yes"
+        }
       } 
     }
   }
