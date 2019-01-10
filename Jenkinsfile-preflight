@@ -97,7 +97,7 @@ pipeline {
       script {
         if (startstep <= 4) { 
           echo "Step 5: EIP Pre-Allocation with Jenkins" 
-          sh "curl -X POST https://${JENKINS_USER}:${JENKINS_PASS}@jenkins.lve.splunkcloud.systems/job/build-stack/build --data-urlencode json=\'{\"parameter\": [{\"name\":\"terraformBranch\", \"value\":\"production\"},{\"name\":\"cloudProvider\", \"value\":\"aws\"},{\"name\":\"cworksEnv\", \"value\":\"lve\"},{\"name\":\"stack\", \"value\":\"${STACK}\"},{\"name\":\"cworksRegion\", \"value\":\"us-west-2\"}]}\'"
+          //sh "curl -X POST https://${JENKINS_USER}:${JENKINS_PASS}@jenkins.lve.splunkcloud.systems/job/build-stack/build --data-urlencode json=\'{\"parameter\": [{\"name\":\"terraformBranch\", \"value\":\"production\"},{\"name\":\"cloudProvider\", \"value\":\"aws\"},{\"name\":\"cworksEnv\", \"value\":\"lve\"},{\"name\":\"stack\", \"value\":\"${STACK}\"},{\"name\":\"cworksRegion\", \"value\":\"us-west-2\"}]}\'"
           timeout(time:5, unit:'MINUTES') {
             input message: "Have you ran EIP Pre-Allocation with Jenkins", ok: "Yes"
           }
