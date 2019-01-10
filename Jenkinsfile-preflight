@@ -1,14 +1,26 @@
-def ad_creds = 'AD_CREDS'
-def okta_creds = 'OKTA_CREDS'
 def shellENV = "export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools"
+def currentStep
+def startstep
+def remote_jenkins_creds = 'jenkins_cloudworks_sre'
+def stepmap = ['Step 0':0, 'Step 1':1, 'Step 2':2, 'Step 3,4':3, 'Step 5':4, 'Step 6':5, 'Step 7,8':6]
+echo "echo ${params.START_STEP}"
+for (each in mapToList(stepmap)){
+  if (params.START_STEP == each[0]){
+    startstep = each[1]
+  }  
+}
 pipeline { 
   agent any 
-  stages{ 
+  stages{
     stage('Prerequisites'){ 
-      steps { 
-        echo "Prerequisites" 
-        sh "ssh -tq -o \"BatchMode yes\" localhost \"${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\""
-//        sh "ssh root@localhost \"/var/root/autovpnroute && exit \""
+      steps {
+        script{ 
+        if (startstep == 0){
+          echo "Prerequisites" 
+          sh "ssh -tq -o \"BatchMode yes\" ${IPADDRESS} \"${shellENV} && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\""
+        }
+        }
+//        sh "ssh root@${IPADDRESS} \"/var/root/autovpnroute && exit \""
 //        sh '''#!/bin/bash
 //             export TERM=vt100
 //        ]    export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -18,62 +30,129 @@ pipeline {
 
       } 
     } 
-    stage('Check Forwarder FQDN'){ 
-      steps { 
-        echo "Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs" 
-        timeout(time:5, unit:'MINUTES') {
-           input message: "Are Customer Forwarders Configured To Forward Events To Correct FQDNs", ok: "Yes"
-        }   
-      } 
+    stage('Step 1: FQDN Check'){ 
+     steps { 
+      script{   
+         if (startstep <= 1) {
+          echo "Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs" 
+          sh "ssh -tq -o \"BatchMode yes\" ${IPADDRESS} \"${shellENV}/preflight_step1_fqdncheck && go run main.go -stack ${STACK}\"" 
+         }
+       }
+     }  
+     post { 
+       success { 
+         echo "" 
+       } 
+     } 
    } 
 
-    stage('Run Migration Preflight gocwb'){ 
+    stage('Step 2: Create the Stack Definition'){ 
      steps { 
        withCredentials([
-          usernamePassword(credentialsId: ad_creds, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
-          usernamePassword(credentialsId: okta_creds, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
-    ]){   
-       echo "Run Migration Preflight gocwb" 
-       sh "${shellENV} && go run gocwb.go -mode migrate -preflight -stack tzheng-1-test -ticketnum CO-96621 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adPassword ${AD_PASSWORD} -oktaPassword ${OKTA_PASSWORD} " 
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
+    ]){
+        script{   
+        if (startstep <= 2) {
+          echo "Step 2: Create the Stack Definition"
+          ansiColor('xterm') { 
+          //sh "ssh -tq -o \"BatchMode yes\" ${IPADDRESS} \"${shellENV} && go run gocwb.go -mode migrate -preflight -stack ${STACK} -ticketnum ${JIRA_NUM} -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD} && exit\""
+          sh "${shellENV} && go run gocwb.go -mode migrate -preflight -stack ${STACK} -ticketnum ${JIRA_NUM} -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD} " 
+          }
+        }
+        }
      }
      }  
      post { 
        success { 
-         echo "Preflight gocwb completed" 
+         echo "" 
        } 
      } 
     }
-    stage('Analyze Result and Review'){ 
-      steps { 
-        echo "Analyze Result and Review" 
-        timeout(time:5, unit:'MINUTES') {
-           input message: "Have you done Review?", ok: "Yes"
+    stage('Step 3, Step 4'){ 
+     steps {
+       withCredentials([
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
+    ]){        
+         script{
+          if (startstep <= 3) {
+            echo "Step 3: Analyze Results and Review and Step 4: Define Sitemapping In Hiera" 
+            sh "ssh -tq -o \"BatchMode yes\" ${IPADDRESS} \"${shellENV}/preflight_step3_4_review_terraform_define_sitemapping && go run main.go -stack ${STACK} -ticketnum ${JIRA_NUM} -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD}; exit\"" 
+          }
         }
-      } 
     }
-    stage('Determine If Multisite is True Or False On Legacy Stack'){ 
-      steps { 
-        echo "Determine If Multisite is True Or False On Legacy Stack" 
-        timeout(time:5, unit:'MINUTES') {
-           input message: "Have you checked Multisite is True Or False On Legacy Stack?", ok: "Yes"
+     }  
+     post { 
+       success { 
+         echo "" 
+       } 
+     } 
+    }
+    stage('Step 5: EIP Pre-Allocation with Jenkins'){ 
+      steps {
+       withCredentials([
+          usernamePassword(credentialsId: remote_jenkins_creds, usernameVariable: 'JENKINS_USER', passwordVariable: 'JENKINS_PASS'),
+    ]){
+      script {
+        if (startstep <= 4) { 
+          echo "Step 5: EIP Pre-Allocation with Jenkins" 
+          sh "curl -X POST https://${JENKINS_USER}:${JENKINS_PASS}@jenkins.lve.splunkcloud.systems/job/build-stack/build --data-urlencode json=\'{\"parameter\": [{\"name\":\"terraformBranch\", \"value\":\"production\"},{\"name\":\"cloudProvider\", \"value\":\"aws\"},{\"name\":\"cworksEnv\", \"value\":\"lve\"},{\"name\":\"stack\", \"value\":\"${STACK}\"},{\"name\":\"cworksRegion\", \"value\":\"us-west-2\"}]}\'"
+          timeout(time:5, unit:'MINUTES') {
+            input message: "Have you ran EIP Pre-Allocation with Jenkins", ok: "Yes"
+          }
         }
-      } 
-    }
-    stage('Define Sitemapping in Hiera'){ 
-      steps { 
-        echo "Define Sitemapping in Hiera" 
-        timeout(time:5, unit:'MINUTES') {
-           input message: "Have you create and push cluster_master.yaml?", ok: "Yes"
-        }        
-      } 
-    }
-    stage('Update Jira & Spreadsheet'){ 
-      steps { 
-        echo "Update Jira & Spreadsheet"
-        timeout(time:5, unit:'MINUTES') {
-           input message: "Have you updated Jira and Spreadsheet?", ok: "Yes"
         }
-      } 
     }
+    } 
+    }
+    stage('Step 6: Review Preflight Outcomes And Update JIRA'){ 
+     steps { 
+       withCredentials([
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
+    ]){        
+         script{
+           if (startstep <= 5) {   
+             echo "Step 6: Review Preflight Outcomes And Update JIRA" 
+             sh "ssh -tq -o \"BatchMode yes\" ${IPADDRESS} \"${shellENV}/preflight_step6_review_preflight && go run main.go -stack ${STACK} -ticketnum ${JIRA_NUM} -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD}; exit\"" 
+           }
+        }
+    }
+    }  
+     post { 
+       success { 
+         echo "" 
+       } 
+     } 
+    }
+    stage('Step 7, Step 8'){ 
+     steps { 
+       withCredentials([
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: 'AD_USER', passwordVariable: 'AD_PASSWORD'),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: 'OKTA_USER', passwordVariable: 'OKTA_PASSWORD')
+    ]){        
+         script{
+           if (startstep <= 6) {
+             echo "Step 7: Assign Canary IP and Step 8: Step 8. Determine Whether There Are Any Knowledge Objects Or Configuration Items That Are \"At Risk\" Of Being Lost As A Result Of Migration" 
+             //sh "ssh -tq -o \"BatchMode yes\" ${IPADDRESS} \"${shellENV}/preflight_step7_8_9_assign_canaryip_check_risk && go run main.go -stack ${STACK} -ticketnum ${JIRA_NUM} -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD}; exit\"" 
+             sh "${shellENV}/preflight_step7_8_9_assign_canaryip_check_risk && go run main.go -stack ${STACK} -ticketnum ${JIRA_NUM} -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD}"
+           }
+        }
+    }
+     }  
+     post { 
+       success { 
+         echo "" 
+       } 
+     } 
+  }
+}
+}
+
+@NonCPS
+List<List<?>> mapToList(Map map) {
+  return map.collect { it ->
+    [it.key, it.value]
   }
 }
