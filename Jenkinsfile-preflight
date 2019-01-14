@@ -1,4 +1,4 @@
-def shellENV = "export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools"
+def shellENV = "export TERM=vt100 && export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools"
 def currentStep
 def startstep
 def remote_jenkins_creds = 'jenkins_cloudworks_sre'
