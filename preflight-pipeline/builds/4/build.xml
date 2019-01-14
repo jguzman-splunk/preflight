@@ -1,0 +1,69 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.29">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>STACK</name>
+          <description></description>
+          <value>homeservices</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>TICKETNUM</name>
+          <description></description>
+          <value>CO-90132</value>
+        </hudson.model.StringParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.1.18">
+          <name>AD_CREDENTIALS</name>
+          <description></description>
+          <value>AD_CREDS</value>
+          <isDefaultValue>true</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.1.18">
+          <name>AD_CREDENTIALS</name>
+          <description></description>
+          <value>OKTA_CREDS</value>
+          <isDefaultValue>false</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>START_STEP</name>
+          <description></description>
+          <value>Step 1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IPADDRESS</name>
+          <description></description>
+          <value>localhost</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>STACK</string>
+        <string>TICKETNUM</string>
+        <string>AD_CREDENTIALS</string>
+        <string>AD_CREDENTIALS</string>
+        <string>START_STEP</string>
+        <string>IPADDRESS</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>182</queueId>
+  <timestamp>1546323519655</timestamp>
+  <startTime>1546323519657</startTime>
+  <result>FAILURE</result>
+  <duration>15</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

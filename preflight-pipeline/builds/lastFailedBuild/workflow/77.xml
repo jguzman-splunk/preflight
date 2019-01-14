@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.22">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.60">
+    <parentIds>
+      <string>76</string>
+    </parentIds>
+    <id>77</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.input.InputStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.60">
+      <arguments>
+        <entry>
+          <string>message</string>
+          <string>Have you ran EIP Pre-Allocation with Jenkins</string>
+        </entry>
+        <entry>
+          <string>ok</string>
+          <string>Yes</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.32">
+      <startTime>1547424704431</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <s.a.PauseAction>
+      <cause>Input</cause>
+      <startTime>1547424704438</startTime>
+      <endTime>1547424876466</endTime>
+    </s.a.PauseAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputSubmittedAction plugin="pipeline-input-step@2.8">
+      <parameters class="linked-hash-map"/>
+      <approver>admin</approver>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputSubmittedAction>
+  </actions>
+</Tag>

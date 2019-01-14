@@ -1,0 +1,198 @@
+Started by user [8mha:////4K2SMf4MTfLq/Ps8b+Er5LlYTHbJGpTcb/xprbIMo9dnAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IdiaRFBwWk0oEHgzOdhFoVoIf1rPwJC/d7YLLrRHmdAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] echo
+echo Step 5
+[8mha:////4F11/NgyRZjWIVpA3QISJYCH7b5Jngp5hApzPHZHLYeQAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KP1Anv6cDSveEvEnZFbljWu5BlOHy2qyq0u2TyxvIfAAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /Users/tzheng/.jenkins/workspace/preflight-pipeline
+[8mha:////4Gn5aVOO/MMG6uHJQoCp01q19uYcupWkp7KVUwCj2EzzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4AxVbroXKxuHfUNS0az65VaMIW036vPPHjkbUrD4yjLcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4Bw6UgjgUmNSHOJ5djn/z/17oQeXaJI6HdVWUPQvtpcFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Prerequisites)
+[8mha:////4PBWHzx/2z1c9rQmaZiEgjz7T2soak46zuQVuRUIYd7hAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] script
+[8mha:////4DSiBsGYf0J7SM2i17oe7zbICofyPx0IwPBYM8Z7joZdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] {
+[8mha:////4BPyq4yNopIGLV7ALNFYs7RwcQXPEn6Py0cbHSC+qf5jAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny3VaQ7T84V/SsvQAAAA==[0m[Pipeline] }
+[8mha:////4MCoL7zgUsoO7Pr7XHCiFjMlhoALP7p6k5BJbYCl/r/wAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KEzcQ4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AHk6T5r0AAAA=[0m[Pipeline] // script
+[8mha:////4ByBuzNVWGgbNrmF+AEyEwFN2C4dWyLbJ2LepdRU/p0NAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPXymMMb0AAAA=[0m[Pipeline] }
+[8mha:////4LDxqeiapgOsBtRr3fYW7D1oWfzUfHF9gL46rsLXx37BAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AHkw63u9AAAA[0m[Pipeline] // stage
+[8mha:////4Fma1ZJU29u+42dmHgUlxbKWw3doGqrTxU3pJUk7Wi9RAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvYHk1C8EAAAA=[0m[Pipeline] stage
+[8mha:////4JVveZc0F2eJZ++LOCJgWskJ8R5PT8cUstbFOWXw4zwdAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Step 1: FQDN Check)
+[8mha:////4El+S7C5K4Pw5obrrNOddmhxr8xiWMlOozw6+X9MrtKFAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] script
+[8mha:////4NxVff1D/QjwL7Ili3YNejShdrsvamz3VCu2mme8QdgYAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] {
+[8mha:////4D7oygI6tl51TU/qgZCc3eRdTkUyeuAd+Bm2QpLq6KEuAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N3ew3WS+AAAA[0m[Pipeline] }
+[8mha:////4LCe7W08PCU/Tkv+5ueWNnONTw/8Z66fHKm4Myia86tRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGiSEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQFEU4bYvgAAAA==[0m[Pipeline] // script
+Post stage
+[8mha:////4DJiG1sDCbvIejC1bqqE6nqYyteDWBapaaIxjl3uUgEXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICSFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AFt+lTxvgAAAA==[0m[Pipeline] echo
+
+[8mha:////4Lm7E/k1BaUR9n+Zu8sfII5TnJftziA3Vcik5hUu3F5bAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEOmjScvgAAAA==[0m[Pipeline] }
+[8mha:////4Cv/s2zOuKke3b49X2HTSSjO+3LlclGvgxi5RYvYM64WAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPjbYp22+AAAA[0m[Pipeline] // stage
+[8mha:////4DTuTaLmZhopjE4NYcxo9YIfGAIY//450biej6/jyvc/AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjgagQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvRVPYJ8EAAAA=[0m[Pipeline] stage
+[8mha:////4KcM8X9oD8RuNx+0/sbdrqkpM794bqAHVIIq05FtLPKSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Step 2: Create the Stack Definition)
+[8mha:////4JVGquls3YI8o79cVINgLWZSEKmPIei/nzacPVlVYD0JAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] withCredentials
+[8mha:////4NON2rFZB0+olVUMpT7P8Tdf8UOWf4R6NaXUhEjc0lyfAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4FQEAUWTpbKzzVyOLaV+4717Cpy4gmJsU99FehURXwfyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] script
+[8mha:////4NlUEAP0J/pjxqbhICKwTHvg5lGWLF144K2PJHP9XVYOAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] {
+[8mha:////4PF1itoDqdKhvtJDWCoBojz1n2U88QDOIqNY1L4s2bqdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7Nx03+yW+AAAA[0m[Pipeline] }
+[8mha:////4GBwQ5SYXmVXJSA2YQ+pjSYECDbCc0zOVgRxoEeGImHdAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/wcDw0vgAAAA==[0m[Pipeline] // script
+[8mha:////4KGGl+eV0GXS7Y0k4LuyEM3Qyo6uezaRHSI1fBeDulAdAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/Dk2eIvgAAAA==[0m[Pipeline] }
+[8mha:////4GK0sD8qbgTqi9FG1xHBPOBlIcxHVxpKCnOkpXHgDAH4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBVEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AHXsPqXvgAAAA==[0m[Pipeline] // withCredentials
+Post stage
+[8mha:////4Eg6fnbgD/PWJCKxSjYZB8T6m8cdMizDiH+S7V5W5jDVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRCB2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNknKPeHXHXtP87PQ/O+AAAA[0m[Pipeline] echo
+
+[8mha:////4NVu2BkwfGHPfcDd1lQyYb3kRdE+Ny1CQfJ3akIcLuclAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQTpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP1xjpDa+AAAA[0m[Pipeline] }
+[8mha:////4MwQu6y0v4jo7szt+mo1PbuSGVrPK7D65XUzaixZG3P9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRiKgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QFaJZxjvgAAAA==[0m[Pipeline] // stage
+[8mha:////4FfYYlPjn1+f0CZ1+HK4YkeqCvZfKjki8Y5v6Ypep9i+AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTIGgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvQsli0cEAAAA=[0m[Pipeline] stage
+[8mha:////4M1HK1uxJdlC2YGkPXkn78+N0tWJuZQ42ZPxs9nwxtU2AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] { (Step 3, Step 4)
+[8mha:////4OTkcRJMYFJxhOmcQe4yG2sc51EsTbq3syUFui964iPlAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] withCredentials
+[8mha:////4KaORC9iRnNZCnJwCjg4SRgUruXEvLLvErWbyJHBEOryAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD59NhPHCAAAA[0m[Pipeline] {
+[8mha:////4JnLaaIeqYRtSs+A8CDjTtGrSQR55xRHDiHz6HEi3W/hAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] script
+[8mha:////4OlauNGylbgW36038LFInTmDOat025EIxfKRESukGhRZAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] {
+[8mha:////4L/xOysDYrTf+whpELU59e1Zpa/eLK6OIRdfXMjhtRKjAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BsbtagO+AAAA[0m[Pipeline] }
+[8mha:////4JONnsdU8UwhncwZ/ZlBMVlcf1bkmLwIZZysf0mbBisHAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BvUOMb++AAAA[0m[Pipeline] // script
+[8mha:////4PPWEEG1QEnt9Pbhz6Lv1k0JD4nqRvrzkwxHuJ78lk7bAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpSIMQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEuEKmUvgAAAA==[0m[Pipeline] }
+[8mha:////4A8zLpn8V0MWNImroQWG0drxn/R2JgIViT3BAKJ5egJSAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABISSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAHfPyKL4AAAA=[0m[Pipeline] // withCredentials
+Post stage
+[8mha:////4DldG9dCvtkk71Os10zXuTjDh4uGpr/1j5CgD0kjLX8IAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk95Nrthw8NNzl2vgAAAA==[0m[Pipeline] echo
+
+[8mha:////4ChWGqKGlqDr76+xClw7DW+RHKL0tbIsC4W7Mo8FH3EqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgJQCUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF5qHPt6w+HT4X1vgAAAA==[0m[Pipeline] }
+[8mha:////4ER/6LhUbistERcK0vgstnJwNXm+onujVMI/b6DnNKBuAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgBASSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AxM3Uc74AAAA=[0m[Pipeline] // stage
+[8mha:////4J1m3oOL1txphHmbgcyCbhL0x9Wp/5YbiSc8TXm6Ht2rAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYTTQIEQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvGUWT5cEAAAA=[0m[Pipeline] stage
+[8mha:////4G1+ylpqlyBzU1WRXT43SN2chGuLuKYNNM6dpjzM8o1MAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUAQaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0iH00AwgAAAA==[0m[Pipeline] { (Step 5: EIP Pre-Allocation with Jenkins)
+[8mha:////4G0kA0J7Lf6vISVCXfY6d5Q/2AUZjoy1DQS6gIu21TiIAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUBibE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAW2++SvCAAAA[0m[Pipeline] script
+[8mha:////4OTbB2Tzh4LyVY5TqcCQOmUHG/WofXCDlCw7gjoaQF3UAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDwMT42zCAAAA[0m[Pipeline] {
+[8mha:////4EnKevc/h1rTjPVOPTVA6xmOuQ/MxuXRfCRPjoDmVK0FAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN1+P256+AAAA[0m[Pipeline] echo
+Step 5: EIP Pre-Allocation with Jenkins
+[8mha:////4IK/QYtm0cqs9NwcW2MaPK9W4h1Yf5SC7fVZCE7TOACDAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDx+WWCPCAAAA[0m[Pipeline] timeout
+Timeout set to expire in 5 min 0 sec
+[8mha:////4BQqsqZS5q+EaVMlMaf0UwH4lQSHyp5AFtLK9ZYlN0LIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oRNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsP+Y+xAMIAAAA=[0m[Pipeline] {
+[8mha:////4Nf+FIMcOT0kEfvgJSqNz7hx4VHvPNbJdUDKqNYWuz7EAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxcaxsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NlEULJr4AAAA=[0m[Pipeline] input
+Have you ran EIP Pre-Allocation with Jenkins
+[8mha:////4DneGmLTAdJQWwU1i0SYDoHHhYUm93hqYEXslvvCBzlYAAABIR+LCAAAAAAAAP9djz1Ow0AUhJ8dQY0oER01u1HAiROUhh8JpAiQwgXW9lt7nWV32X0mSZNDcA1okLgCh+ACdNQUNBhSwTQzzTeaefqAjeDh1PqS1WhmyoRcMaebsk1sbv1MajtnoXHOemKB0AWmjGuIXV9Nb86XDr1WZnZpCbfeOi+fg6/3GKIJdBqvCbYntbgXXAtT8il5ZcqjhYfdqimCNSy3JliN7E9Lf/z4PH5wrzHEF7Cp0ZRUrevuYAVRi+/8w0/W/gPDWlEMsHBt6BBEewR5ReRGnGubC13ZQKO0m3Z5bTPuPEqtyor2nXLYjkCe9PjvQ36c9YdZIbKekCkmUshMZt3DPDkYyCEmadLCNkcszm4dLb8Bs04Av0oBAAA=[0mYes or [8mha:////4BgrIPLDP+/IF2CvW/4wCqbkX4HWrL7ohVkHJxftHZdSAAABHB+LCAAAAAAAAP9dkLFOwzAURV9SlRkxIjZm7KqQNi3qAgwgVYBURhY7tR0nlm3sF1oWPoLfgAWJX+Aj+AE2ZgYWApngLu8u5+rd+/QB/RjgxAVFKmFrbWOhiTeNah1ZuVBL41YkNt67gCSi8JFo6xsklxeLq9M7L4LRtj53KDbfei+f46/3FJI59JpgELbmFbtl1DCr6AKDtupwHWCnbJbRWVI4G50R5E/KaPb4PHvwrymkZ7BhhFVYdnE3cA9Ji2//w4+7+wNDpyQFWPvW9BGSXYTrEtFPKTWuYKZ0Eaf5IB/QynHqg5BGqxL3vPaifULQbEh/G9IjPprwJeNDJnORSSa55IODItsfy4nI8owy3o7yDTvFkr1DAQAA[0mAbort
+Approved by [8mha:////4K2SMf4MTfLq/Ps8b+Er5LlYTHbJGpTcb/xprbIMo9dnAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+[8mha:////4PJj9LeRSAJduQw6JDpxIoFFPJqZjZmsjA2AMPAjjXgLAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZSwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfmYKm674AAAA=[0m[Pipeline] }
+[8mha:////4LUbgjo/KwvpKWGtFBt1Qz29sk+OSALc0Gt1RqsF9iRmAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgHaAPdtvgAAAA==[0m[Pipeline] // timeout
+[8mha:////4HxeDYf3GHF7kWEERkk6qGDgLreCQhloelM4N7rB3X7/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIVEgRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyt//U9g1KdshPvgAAAA==[0m[Pipeline] }
+[8mha:////4FrQpyFhbulvob70Ay0+34FRf8Gc9v3a76T7iAri0q4dAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBTQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wGlbCbAvgAAAA==[0m[Pipeline] // script
+[8mha:////4GAHKvFws/nPB56grWzGBed0aENHxhZ1qsQPSv4CD0r6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBTQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDLtd++wGWj318vgAAAA==[0m[Pipeline] }
+[8mha:////4InTz/tuCUm6tZ2kzFIouNqw8pLzgAuoFubbhUwH9MeAAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIYSEUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+22u3eED3XQumr4AAAA=[0m[Pipeline] // stage
+[8mha:////4KPWbduIDvzTRsXChZbobz9ppxwiCq9545zjPWU6MJ7dAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTIGgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxW7zOZZvVneX08EAAAA=[0m[Pipeline] stage
+[8mha:////4II/qd/c62EIBJJoKBDnM2yaAk1yziEVxdEanhAdN4+2AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ALEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7KBoKTCAAAA[0m[Pipeline] { (Step 6: Review Preflight Outcomes And Update JIRA)
+[8mha:////4IE6Pt712q9CssEARljwN/c8dTa5FegG28EgCVFfhF7/AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAZRHx0bCAAAA[0m[Pipeline] withCredentials
+[8mha:////4H6xP+cQFS5O/0W/b6W0Fz0BidiRNqpFE9wtgLU1BKaPAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0ogtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsP+urdAcIAAAA=[0m[Pipeline] {
+[8mha:////4OnFKkbimWuV2Nr8aHzPEtDq7HVIKeqP5mXi7wQQl0KtAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KwNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPXl9jU8IAAAA=[0m[Pipeline] script
+[8mha:////4CE1GZNRzsiqwbuLWiJ+G2jaxtbfIvFQrKwrH+kkhrfZAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUsyu2PCAAAA[0m[Pipeline] {
+[8mha:////4LqKxftFQMhL62m95hFAEzT6gaEg4wYqqjBGQvbgQ8H8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIRCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBiGBjUy+AAAA[0m[Pipeline] echo
+Step 6: Review Preflight Outcomes And Update JIRA
+[8mha:////4IxVef03s647qdR9QvxPDMpLJTNYaR60AOkqS0APYaFgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AFfUI2cvgAAAA==[0m[Pipeline] sh
++ ssh -tq -o 'BatchMode yes' localhost 'export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/****/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools/preflight_step6_review_preflight && go run main.go -stack vidyard -ticketnum CO-98319 -adpassword **** -oktapassword ****; exit'
+2019/01/03 12:24:33 Step 6: Review Preflight Outcomes And Update JIRA
+2019/01/03 12:24:33 Executing SkyNet search: | `migration_preflight_review_go_output(vidyard)`
+2019/01/03 12:24:33 stack user is:  ****
+2019/01/03 12:24:35 SkyNet search ID: 1546478675.7171_052CED96-2B68-4F77-8464-D26DD5405801
+
+2019/01/03 12:24:36 {
+  "preview": false,
+  "init_offset": 0,
+  "messages": [],
+  "fields": [
+    {
+      "name": "attribute"
+    },
+    {
+      "name": "value"
+    },
+    {
+      "name": "outcome",
+      "type": "str"
+    }
+  ],
+  "results": [
+    {
+      "attribute": "splunk_version",
+      "value": "7.0.5.3",
+      "outcome": "MW1 of 6 hours is required as Splunk needs a minty to minty upgrade to 7.0.8.1 immediately prior to MW1."
+    },
+    {
+      "attribute": "sh_ingest",
+      "value": "no",
+      "outcome": "The customer's indexing activity is within Splunk Cloud standards. No action required on the customer's part."
+    },
+    {
+      "attribute": "ingestion_port",
+      "value": "9997",
+      "outcome": "The customer's indexing activity is within Splunk Cloud standards. No action required on the customer's part."
+    },
+    {
+      "attribute": "hybrid_search",
+      "value": "no",
+      "outcome": "Customer does not have hybrid search enabled. No action required."
+    },
+    {
+      "attribute": "credential_count",
+      "value": "$result.credential_count$",
+      "outcome": "$result.credential_count_outcome$"
+    }
+  ],
+  "highlighted": {}
+}
+2019/01/03 12:24:36 Preflight Outcome to file /tmp/comment
+2019/01/03 12:24:36 Preflight Outcomes
+splunk_version | 7.0.5.3 | MW1 of 6 hours is required as Splunk needs a minty to minty upgrade to 7.0.8.1 immediately prior to MW1.
+sh_ingest | no | The customer's indexing activity is within Splunk Cloud standards. No action required on the customer's part.
+ingestion_port | 9997 | The customer's indexing activity is within Splunk Cloud standards. No action required on the customer's part.
+hybrid_search | no | Customer does not have hybrid search enabled. No action required.
+credential_count | $result.credential_count$ | $result.credential_count_outcome$
+
+STDOUT: 
+
+HTTP/1.1 201 
+Server: nginx/1.10.2
+Date: Thu, 03 Jan 2019 01:24:40 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-AREQUESTID: 1044x7102501x2
+X-ANODEID: sv5-prd-dcjira001.sv.splunk.com
+X-ASEN: SEN-8892539
+Set-Cookie: JSESSIONID=958D60696B55F1C8A89A995E92FB5CB9;path=/;HttpOnly
+Set-Cookie: crowd.token_key=""; Domain=.splunk.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly
+X-Seraph-LoginReason: OUT
+Set-Cookie: crowd.token_key=WEpg3MiTN4fWSHZ95GeFiQ00; Domain=.splunk.com; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=AP7A-ANWZ-HL1E-L9EZ|8ed8c38c776ebffc5e87a883db0969d04d9fcb77|lin;path=/
+X-ASESSIONID: h12ygp
+X-AUSERNAME: ****
+Location: https://jira.splunk.com/rest/api/2/issue/1121363/comment/2861430
+Cache-Control: no-cache, no-store, no-transform
+X-Content-Type-Options: nosniff
+
+{"self":"https://jira.splunk.com/rest/api/2/issue/1121363/comment/2861430","id":"2861430","author":{"self":"https://jira.splunk.com/rest/api/2/user?username=****","name":"****","key":"****","emailAddress":"****@splunk.com","avatarUrls":{"48x48":"https://jira.splunk.com/secure/useravatar?avatarId=10192","24x24":"https://jira.splunk.com/secure/useravatar?size=small&avatarId=10192","16x16":"https://jira.splunk.com/secure/useravatar?size=xsmall&avatarId=10192","32x32":"https://jira.splunk.com/secure/useravatar?size=medium&avatarId=10192"},"displayName":"Tom Zheng (C)","active":true,"timeZone":"Australia/Sydney"},"body":"Preflight Outcomes\nsplunk_version | 7.0.5.3 | MW1 of 6 hours is required as Splunk needs a minty to minty upgrade to 7.0.8.1 immediately prior to MW1.\nsh_ingest | no | The customer's indexing activity is within Splunk Cloud standards. No action required on the customer's part.\ningestion_port | 9997 | The customer's indexing activity is within Splunk Cloud standards. No action required on the customer's part.\nhybrid_search | no | Customer does not have hybrid search enabled. No action required.\ncredential_count | $result.credential_count$ | $result.credential_count_outcome$\n","updateAuthor":{"self":"https://jira.splunk.com/rest/api/2/user?username=****","name":"****","key":"****","emailAddress":"****@splunk.com","avatarUrls":{"48x48":"https://jira.splunk.com/secure/useravatar?avatarId=10192","24x24":"https://jira.splunk.com/secure/useravatar?size=small&avatarId=10192","16x16":"https://jira.splunk.com/secure/useravatar?size=xsmall&avatarId=10192","32x32":"https://jira.splunk.com/secure/useravatar?size=medium&avatarId=10192"},"displayName":"Tom Zheng (C)","active":true,"timeZone":"Australia/Sydney"},"created":"2019-01-02T17:24:39.570-0800","updated":"2019-01-02T17:24:39.570-0800"}
+[8mha:////4EqGQ6jmyJsF+WH08/n+HbOsmF8EJiazJtrDcOruSH8PAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGkBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/TX/z/vgAAAA==[0m[Pipeline] }
+[8mha:////4Fvs0JdkagfPl1d3CxdUfbEnvVTY+wrDWnxUchQUAbYTAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUZACUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g/sMNfpvgAAAA==[0m[Pipeline] // script
+[8mha:////4NXQH3g/CY3BRDwpsar/ckpmRm/mSI0wGHsFN0GIsBz/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpkEKBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkF52Oeq6w/f04xVvgAAAA==[0m[Pipeline] }
+[8mha:////4O+iGkfYAYHux6sc5C6HRKu47KdTkTN3+hJs4poAWzg5AAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLT8ClQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw/dsoDRvgAAAA==[0m[Pipeline] // withCredentials
+Post stage
+[8mha:////4MpcRz5+L31LXv29R1vKyQPkJRmSOPyV6zlaEMUzPhCEAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLT8ClQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnf5jrshg9uzlomvgAAAA==[0m[Pipeline] echo
+
+[8mha:////4P2B31TOpz6Aa8vyRqgGq/UaLSfCQGtDQMxdT0D7BXu0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpUCgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygPda56/wFAI0/rvgAAAA==[0m[Pipeline] }
+[8mha:////4LXyYe1z/Kjz03XLyKS2UHzK1FGop1tNL5+nAqBI9dbZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIJECUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ17kO+w9GZXe+vgAAAA==[0m[Pipeline] // stage
+[8mha:////4FwXNhlLC23CXZ9TW6MprJsMF2cyfn6Fn5JlSSpFs+uNAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTIZAQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIDYMxXb3OZZvIYwnH8EAAAA=[0m[Pipeline] stage
+[8mha:////4A2KijDNkLApJHXQczcrCDAlDfa+OX5Q4Rt6aW0MdI1PAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0BISYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+81LNBsIAAAA=[0m[Pipeline] { (Step 7, Step 8)
+[8mha:////4LBq3TJc8mMs5ZPF3gLcw//RUdLAwmaw5ao7MCqLIW+RAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUDRDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrNxKsBBbCAAAA[0m[Pipeline] withCredentials
+[8mha:////4P5VR38f+8Q4UvDyVKAqNeuYuqEZhYf862Odxwc87d9SAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUNiTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAUPegdTCAAAA[0m[Pipeline] {
+[8mha:////4Nb60JEuKCdDitN/FtEDK8Wkf/AhZftxgg5DEkDLu44xAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMCEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDy1zm5PCAAAA[0m[Pipeline] script
+[8mha:////4PwODqMKR0zY0HlUs34NRmtaikDezA8vSNyUVwyilofNAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggUJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfACJxiXBwgAAAA==[0m[Pipeline] {
+[8mha:////4P0UeOAl3JpcEgy34OXMihOuMT6t5AgAsfH4G4fisq0PAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAGulDDkvgAAAA==[0m[Pipeline] echo
+Step 7: Assign Canary IP and Step 8: Step 8. Determine Whether There Are Any Knowledge Objects Or Configuration Items That Are "At Risk" Of Being Lost As A Result Of Migration
+[8mha:////4JjZxOFV/lB3PeBKijl7taRKZ6xnAJTTtxUYbqWnzyiuAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpT77ad24Q3vpSv9vgAAAA==[0m[Pipeline] sh
++ ssh -tq -o 'BatchMode yes' localhost 'export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/****/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools/preflight_step7_8_assign_canaryip_check_risk && go run main.go -stack vidyard -ticketnum CO-98319 -adpassword **** -oktapassword ****; exit'
+bash: line 0: cd: /Users/****/cloud/cloudworks-tools/preflight_step7_8_assign_canaryip_check_risk: No such file or directory
+[8mha:////4Fw12q3DJZxBeTevwo2QnZviRGW+rGa2zy8y02g8gmpiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyv/vU9g2E6+AdvgAAAA==[0m[Pipeline] }
+[8mha:////4JFnHdIywzGHdVhtp64PXYMrwLgVykQ6lpDrc2LmBqI6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgG3CLuhvgAAAA==[0m[Pipeline] // script
+[8mha:////4MQgYL6cyI1nxrfjDJ5odaFBz1aXsH+zrA/71o/KsVcFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiukiIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/Btjr5Mm+AAAA[0m[Pipeline] }
+[8mha:////4B+KkxzpiMkbPDVrFo35qaS2noaMM3Roobp7VEpHvGs3AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCCUJUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23f6wi/db4AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4Bx+DctlizuGm1duBq/qvHwh05gj8paZd8BI/5G8mkEbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJChyJEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoP/z2gwq+AAAA[0m[Pipeline] }
+[8mha:////4G7n17AFEaVsc1foljI6b3iTUfXRNZFSDwfVaS9rGr3wAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKkAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtdu/wHPFdi2vgAAAA==[0m[Pipeline] // stage
+[8mha:////4IicFfpTjrFID46tQopvLrLdvvLJ+lVqGo+K91cENdvIAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRkCgQoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9vBdnuAx7K0TO9AAAA[0m[Pipeline] }
+[8mha:////4AP9Vy5tUynpE1Ag23ECs1W6TmYT4BpmDs5EEjTomaCrAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpoEGIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPONO2eb0AAAA=[0m[Pipeline] // node
+[8mha:////4OEnTbtg9TNJYBtmaB8ljSmOdqZAW1PQLR24JZ8SwL0MAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREA1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AB2q9SK9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

@@ -1,0 +1,161 @@
+Started by user [8mha:////4K2SMf4MTfLq/Ps8b+Er5LlYTHbJGpTcb/xprbIMo9dnAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IdiaRFBwWk0oEHgzOdhFoVoIf1rPwJC/d7YLLrRHmdAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] echo
+echo Step 0
+[8mha:////4F11/NgyRZjWIVpA3QISJYCH7b5Jngp5hApzPHZHLYeQAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KP1Anv6cDSveEvEnZFbljWu5BlOHy2qyq0u2TyxvIfAAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /Users/tzheng/.jenkins/workspace/preflight-pipeline
+[8mha:////4Gn5aVOO/MMG6uHJQoCp01q19uYcupWkp7KVUwCj2EzzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4AxVbroXKxuHfUNS0az65VaMIW036vPPHjkbUrD4yjLcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4Bw6UgjgUmNSHOJ5djn/z/17oQeXaJI6HdVWUPQvtpcFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Prerequisites)
+[8mha:////4PBWHzx/2z1c9rQmaZiEgjz7T2soak46zuQVuRUIYd7hAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] script
+[8mha:////4DSiBsGYf0J7SM2i17oe7zbICofyPx0IwPBYM8Z7joZdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] {
+[8mha:////4LXJDeB8bOidrI12psBRiNvQa/T/2I/LC9ng1EquQ6MXAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBjJ8j2gny37T6VOYoyvQAAAA==[0m[Pipeline] echo
+Prerequisites
+[8mha:////4JFV+wH3pzprH41sF7rQwGlNa+yIrF3ZhftYmTtlGmIRAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KE0Rgn14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmXpDtBXlZ9h/UCJErvQAAAA==[0m[Pipeline] sh
++ ssh -tq -o 'BatchMode yes' localhost 'export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools && ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false'
+----------------------------------------------------------
+                      BEGIN SUMMARY                       
+----------------------------------------------------------
+cloud path:             [ /Users/tzheng/cloud ]                   
+terraform repo path:    [ /Users/tzheng/cloud/terraform-infrastructure-definitions ]                  
+hieradata repo path:    [ /Users/tzheng/cloud/puppet-stacks-hieradata ]                  
+tools repo path:        [ /Users/tzheng/cloud/cloudworks-tools ]                  
+build outputs path:     [ /Users/tzheng/cloud/build-outputs ]                     
+go source path:         [ /Users/tzheng/go/src ]                   
+No-op mode:             [ false ]                       
+----------------------------------------------------------
+[m.bash_profile exists.
+.bash_login not found... trying .profile
+.profile not found...
+git configuration is already in place...
+/Users/tzheng/cloud directory already present...
+/Users/tzheng/.ssh/cp directory already present...
+/Users/tzheng/cloud/build-outputs directory already present...
+/Users/tzheng/cloud/terraform-infrastructure-definitions directory already present...pulling latest...
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+Already up to date.
+/Users/tzheng/cloud/puppet-stacks-hieradata directory already present...pulling latest...
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+From github.com:SplunkCloud/puppet-stacks-hieradata
+   823a6edd6..f9fa66e46  master     -> origin/master
+Updating 823a6edd6..f9fa66e46
+Fast-forward
+ stacks/stg/csms-pk2l11-2093/cluster_master.yaml |  6 ++++
+ stacks/stg/csms-pk2l11-2093/common.yaml         | 39 +++++++++++++++++++++++++
+ stacks/stg/csms-pk2l11-2093/indexer.yaml        |  3 ++
+ 3 files changed, 48 insertions(+)
+ create mode 100644 stacks/stg/csms-pk2l11-2093/cluster_master.yaml
+ create mode 100644 stacks/stg/csms-pk2l11-2093/common.yaml
+ create mode 100644 stacks/stg/csms-pk2l11-2093/indexer.yaml
+/Users/tzheng/cloud/cloudworks-tools directory already present...
+brew package dependency is already satisfied... [ /usr/local/bin/brew ]
+hub package dependency is already satisfied... [ /usr/local/bin/hub ]
+Executing hub initial login test...
+Enter github credentials if prompted...
+v1.1.1a
+v0.9g
+jq package dependency is already satisfied... [ /usr/local/bin/jq ]
+LastPass package dependency is already satisfied... [ /usr/local/bin/lpass ]
+LastPass config entry is already present... [  ]
+Performing LastPass check...
+Unable to access LastPass... attempting initial login. Input credentials if prompted!
+Error: Failed to enter correct password.
+go package dependency is already satisfied... [ /usr/local/bin/go ]
+/Users/tzheng/go/src directory already present...
+Now starting go package dependency checks...
+hcl package already present...
+terminal package already present...
+jsonq package already present...
+yaml.v2 package already present...
+gojenkins package already present...
+aws-sdk-go-v2 package already present...
+go-jmespath package already present...
+splunkcloud directory already present...
+/Users/tzheng/go/src/github.com/splunkcloud/cloudworks-tools link already present...
+********************* WARNING *************************
+It appears you are not connected to the VPN!           
+If you are planning to run gocwb after this, please connect and add routes before-hand.
+********************* WARNING *************************
+----------------------------------------------------------
+                      Final Summary                       
+----------------------------------------------------------
+[mbash_profile:                     [ PASS ]                 
+[mbash_login:                       [ FAIL ]                 
+[m.profile:                         [ FAIL ]                 
+[mgit config:                       [ PASS ]                 
+[mcloud path:                       [ PASS ]                 
+[moutputs path:                     [ PASS ]                  
+[mterraform repo:                   [ PASS ]               
+[mhieradata repo:                   [ PASS ]               
+[mtools repo:                       [ PASS ]               
+[mbrew package:                     [ PASS ]                    
+[mhub package:                      [ PASS ]                     
+[mjq package:                       [ PASS ]                      
+[mlastpass-cli:                     [ PASS ]                      
+[mlastpass config:                  [ PASS ]                 
+[mgo package:                       [ PASS ]                      
+[mgo source:                        [ PASS ]                   
+[mhcl package:                      [ PASS ]                     
+[mterminal package:                 [ PASS ]                
+[mjsonq package:                    [ PASS ]                   
+[myaml package:                     [ PASS ]                    
+[mgojenkins package:                [ PASS ]                    
+[maws-sdk-go-v2 package:            [ PASS ]                    
+[mgo-jmespath package:              [ PASS ]                    
+[msplunkcloud path:                 [ PASS ]                   
+[mtools repo link:                  [ PASS ]                   
+[mVPN check:                        [ FAIL ]                     
+[m----------------------------------------------------------
+[m[8mha:////4BmynVIr8pOamWoadxaq4vQKpeE4VuWjuor1FKaJEESlAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRdAhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Qb3eCbP8BWAQ01r0AAAA=[0m[Pipeline] }
+[8mha:////4PySFmOOAsonSqdDWTMVkCBM8KRnrD0weMbK817WC0rRAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokFCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AH4dU5y9AAAA[0m[Pipeline] // script
+[8mha:////4PqmQ/+aqjDBOEXnyUK/FDGipAww5LBoQibTA1bGsi48AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREhIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBNn+A//czL69AAAA[0m[Pipeline] }
+[8mha:////4JMNqFKXTh8q2vJ9vg7+P1nvrvZ2lH+UJPJV2+fg1MACAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBTSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP2cWr9L0AAAA=[0m[Pipeline] // stage
+[8mha:////4Mp8eK9AwSpl1VRBNsfstmwiswx7Go4iLw99NWhM+MKHAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjCmgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZva9j9RsEAAAA=[0m[Pipeline] stage
+[8mha:////4NxVff1D/QjwL7Ili3YNejShdrsvamz3VCu2mme8QdgYAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Step 1: FQDN Check)
+[8mha:////4M2/cYYm+TggFNrPO6K0L9DpLV3CSBZntaH7Mt3k2YSNAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] script
+[8mha:////4A5AUHAGbLRPPxUkzvjd8ZyDc+Tzmp0iaIHQbrekXT8OAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4Cu9RkA62gIomGdywhFcjPnib5wFZ8fO7IgCs9WC1CzcAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] echo
+Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs
+[8mha:////4Op+JyaFuC6rbYc0RhTs/VISZ6PJC3dNEbsqz7dsV427AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] sh
++ ssh -tq -o 'BatchMode yes' localhost 'export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools/preflight_step1_fqdncheck && go run main.go -stack a2asc'
+2019/01/10 14:16:01 Finding LastPass entry 'a2asc'
+Error: Error: Could not find decryption key. Perhaps you need to login with `lpass login`.
+2019/01/10 14:16:01 lpId is:  
+2019/01/10 14:16:01 Could not find LastPass entry for stack.  Make sure the stack name is in the name of the LastPass entry and that the url start with https://STACK. Additionally, you may need to issue 'lpass logout' followed by 'lpass login USER@splunk.com'.
+exit status 1
+[8mha:////4JIZ/TNge46EJYox7fGh4QzZh+oNTsTUv+puro8kL0r6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+[8mha:////4HkIURX9lCC7V+TWdznXkMd3mOGUCNBMSd0sUlaxw0fyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // script
+[8mha:////4CltcUlkJIsTpeL7eP867ao/Rkm+eKBjp97Ajj+sDvY6AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAkWr3Ir4AAAA=[0m[Pipeline] }
+[8mha:////4LEMBS682dv42RgrF//3r7GO12OHHWOXKNRyeBh7zMuhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+iiayevgAAAA==[0m[Pipeline] // stage
+[8mha:////4DiUXtBb1yuHPTRHzQHKy7t1kp6ya0nJb3/DYAaz6gONAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIUGDqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8A/bCFXfBAAAA[0m[Pipeline] stage
+[8mha:////4FQEAUWTpbKzzVyOLaV+4717Cpy4gmJsU99FehURXwfyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Step 2: Create the Stack Definition)
+Stage "Step 2: Create the Stack Definition" skipped due to earlier failure(s)
+[8mha:////4DJSTsIuMUgxjFciw/5PzUkm6Dxw5ED/Xf0jjnOzp8dyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEp+Rh+vgAAAA==[0m[Pipeline] }
+[8mha:////4GiXPY9c6a5zjdy3e9sf83rZEyV40c5G+YuWcKS7rl2wAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0aGkPCvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NkVaWjcgaaulopIn0rB5BUeHROdgSBDr0GRgTA2RhHZAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDhKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxXbzOZZvXyo7B8EAAAA=[0m[Pipeline] stage
+[8mha:////4G7/BnUH3Ysob9Rftz2KWWH56AU3NObavHGFHt4BB93LAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] { (Step 3, Step 4)
+Stage "Step 3, Step 4" skipped due to earlier failure(s)
+[8mha:////4MH01/NPUtGF8Z6PXOCWShMSBHLvD4CznpZacYvWc+LqAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKPe7T23fj0WMib4AAAA=[0m[Pipeline] }
+[8mha:////4NaSJR42yCVfoYQwiHKUjkQJTyVo/g8VLO97SJdamRglAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKClBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fvKbXNb4AAAA=[0m[Pipeline] // stage
+[8mha:////4H48p+hhV0WT6miSzRjN3jIXBCxCz1vHw4u7c5zQEkxCAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTABWiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2Gw/x/INSWiqnMEAAAA=[0m[Pipeline] stage
+[8mha:////4AUz07IUfnvP7ZXnq0lVeucCQVZCH3cmKVQov1mNSffRAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] { (Step 5: EIP Pre-Allocation with Jenkins)
+Stage "Step 5: EIP Pre-Allocation with Jenkins" skipped due to earlier failure(s)
+[8mha:////4KWnMvXqHENk1mvtn6cDx5umtuV3bXIiCoElMwc5+5hVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4DDcBW+AAAA[0m[Pipeline] }
+[8mha:////4MN84k7ekAqbATbSKgRNRNj7pN9JYfjHOrKaqXZudp2XAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGzICupvgAAAA==[0m[Pipeline] // stage
+[8mha:////4H0b6Wmojoy6HCRzBvtcHtp52ePxVWg0IjSauJDh86IDAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTICQkREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgtQ7HZfY7lGzKoaOvBAAAA[0m[Pipeline] stage
+[8mha:////4KaORC9iRnNZCnJwCjg4SRgUruXEvLLvErWbyJHBEOryAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD59NhPHCAAAA[0m[Pipeline] { (Step 6: Review Preflight Outcomes And Update JIRA)
+Stage "Step 6: Review Preflight Outcomes And Update JIRA" skipped due to earlier failure(s)
+[8mha:////4OppIFQcfdULmsmCojha8NGvMO6JSzMLiQ/tp40mHSFLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBA1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw84UjgPvgAAAA==[0m[Pipeline] }
+[8mha:////4DSN1bjsenXwrHnYO0kOXWBDXIkJ9pJOpsrOtpC/khj4AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAC7Fjs74AAAA=[0m[Pipeline] // stage
+[8mha:////4NOxf6Ia7eXkv5cG/X2+0oZIVI4kG/7xaX2KxKmcvzbYAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIagQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxXbzOZZv2rVUj8EAAAA=[0m[Pipeline] stage
+[8mha:////4A5buYCjRZ69xHhwBZuP7FcxtrBjMwZ/taaSP6GXqPv2AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAXzhjwPCAAAA[0m[Pipeline] { (Step 7, Step 8)
+Stage "Step 7, Step 8" skipped due to earlier failure(s)
+[8mha:////4ChM0fydO09D6wK0fC8KgoRHkvGU+AIqoB/OmBsDk8mSAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSkA5R0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3f9289O74AAAA=[0m[Pipeline] }
+[8mha:////4M40kohLjLQYz/Xe9rOuo3Uki4n2yfV6X/MtWUk+gctBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8SMZoe+AAAA[0m[Pipeline] // stage
+[8mha:////4Pe/dXF9bv8qdowUfa5CSwFBl/l3r7BHhiHwR3rOo/qJAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0auNY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfIt3tBtvsAAH/Per0AAAA=[0m[Pipeline] }
+[8mha:////4OSbZsYeQa1IUpqQwrpsGkGSM12dPJsNowocIJ0fQAeEAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsJA7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHJmaoML0AAAA=[0m[Pipeline] // node
+[8mha:////4PNyQOvSAHto+oFT7OKE46AqUnxBzaJUG6poKR+x8/JlAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREAUSoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2A8JUm1u9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

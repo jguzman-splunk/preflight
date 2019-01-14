@@ -1,0 +1,113 @@
+Started by user [8mha:////4K2SMf4MTfLq/Ps8b+Er5LlYTHbJGpTcb/xprbIMo9dnAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IdiaRFBwWk0oEHgzOdhFoVoIf1rPwJC/d7YLLrRHmdAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] echo
+echo Step 0
+[8mha:////4F11/NgyRZjWIVpA3QISJYCH7b5Jngp5hApzPHZHLYeQAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KP1Anv6cDSveEvEnZFbljWu5BlOHy2qyq0u2TyxvIfAAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /Users/tzheng/.jenkins/workspace/preflight-pipeline
+[8mha:////4Gn5aVOO/MMG6uHJQoCp01q19uYcupWkp7KVUwCj2EzzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4AxVbroXKxuHfUNS0az65VaMIW036vPPHjkbUrD4yjLcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4Bw6UgjgUmNSHOJ5djn/z/17oQeXaJI6HdVWUPQvtpcFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Prerequisites)
+[8mha:////4JI+neBXFuXOa68rje9aEKAecr+YUYYWhxx7QhoaEpKMAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QfVs29dvAAAAA==[0m[Pipeline] }
+[8mha:////4D0oKIGE8tjEo0rSybDhu+UxIIZC4h9wKEKBDbnyfw04AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j/zqggXvAAAAA==[0m[Pipeline] // stage
+[8mha:////4GTC5mJZcZMSyJvJngTCA71Y0hoYv8W408eeGtHHYfXFAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDBRWiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INdjukkMEAAAA=[0m[Pipeline] stage
+[8mha:////4JcY8IfTtB8EEhnC5491yMtS/97BMCQZ9EvlXD5GWTnBAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs)
+Stage "Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs" skipped due to earlier failure(s)
+[8mha:////4NdHr4dUFQmvgpbU7ggw41sF11Zd3a+P9gvfVE1A9y23AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7H2Cut1/qn0DJDYlLL4AAAA=[0m[Pipeline] }
+[8mha:////4A6/7c3D/6pbTa7B7c61CAlsncZzUq4KC28mU49NdCkVAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICokRUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23fF9V+kL4AAAA=[0m[Pipeline] // stage
+[8mha:////4Fma1ZJU29u+42dmHgUlxbKWw3doGqrTxU3pJUk7Wi9RAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvYHk1C8EAAAA=[0m[Pipeline] stage
+[8mha:////4JVveZc0F2eJZ++LOCJgWskJ8R5PT8cUstbFOWXw4zwdAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Step 2: Create the Stack Definition)
+Stage "Step 2: Create the Stack Definition" skipped due to earlier failure(s)
+[8mha:////4Drs/zMa+bEbMMQM54hZPkcE/81iDAPwl5hS+YpB4a0yAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7Nyuw2bC+AAAA[0m[Pipeline] }
+[8mha:////4AxvIt1Dr0079fHNUax/gHTTiklAcrl+FSr4akg/fKkFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0YU4IMvgAAAA==[0m[Pipeline] // stage
+[8mha:////4LugIAeeHKzXrkHrEs5bosZAiqMnsFme+sGy1TVMsNrPAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjCiQkREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgtQ7HZfY7lGxu593zBAAAA[0m[Pipeline] stage
+[8mha:////4A5AUHAGbLRPPxUkzvjd8ZyDc+Tzmp0iaIHQbrekXT8OAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (Step 3, Step 4)
+Stage "Step 3, Step 4" skipped due to earlier failure(s)
+[8mha:////4H3jDTGWx21R2RtMpOUoAKqjTP2BXhL3HC4SHAM4tV+8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQrnf5todPoAF3l6+AAAA[0m[Pipeline] }
+[8mha:////4BRpbuQjoq/J5+19ZLdFEVhDN44lYM7ghwgArOIilg79AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUCEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AGz5oXivgAAAA==[0m[Pipeline] // stage
+[8mha:////4NLed3fdMP57nhG5BM4XiRIrESQnnDL9O/FtNdyyS8suAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYQjRaJCVLSWG15gYmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKUIB4pOdBZ7j6n1Ygijy01MFPtLoEl0dBYtYaJghbKTImOPCypiC0uKElYS1hbbQMmjY9jITt91HTS6+sQxb3sJpTc3eEAhs5l15C/MEbbX0STCn+evAOaBodgxlE3zOVZv4ICE7MEAAAA=[0m[Pipeline] stage
+[8mha:////4FoJBApwXkwMeY2cXbUNgGqx0DIFvsgQzCfBxkEkGES9AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] { (Step 5: EIP Pre-Allocation with Jenkins)
+Stage "Step 5: EIP Pre-Allocation with Jenkins" skipped due to earlier failure(s)
+[8mha:////4COJmGssxlEusvgpx44TI2xGTCmLgY0HiPMoZvWdXgYqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3Bkv9tw6+AAAA[0m[Pipeline] }
+[8mha:////4GNgJoLAxq0G2jmOvdHZI+mVMphd7F6CYX6upNC6PgGUAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNHEyTq6ExS/AFhFK3qNApZNf5K/5D6JNnLzDzT13Oc8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DXge7LK+AAAA[0m[Pipeline] // stage
+[8mha:////4DiUXtBb1yuHPTRHzQHKy7t1kp6ya0nJb3/DYAaz6gONAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIUGDqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8A/bCFXfBAAAA[0m[Pipeline] stage
+[8mha:////4FQEAUWTpbKzzVyOLaV+4717Cpy4gmJsU99FehURXwfyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Step 6: Review Preflight Outcomes And Update JIRA)
+Stage "Step 6: Review Preflight Outcomes And Update JIRA" skipped due to earlier failure(s)
+[8mha:////4DJSTsIuMUgxjFciw/5PzUkm6Dxw5ED/Xf0jjnOzp8dyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEp+Rh+vgAAAA==[0m[Pipeline] }
+[8mha:////4GiXPY9c6a5zjdy3e9sf83rZEyV40c5G+YuWcKS7rl2wAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0aGkPCvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NkVaWjcgaaulopIn0rB5BUeHROdgSBDr0GRgTA2RhHZAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDhKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxXbzOZZvXyo7B8EAAAA=[0m[Pipeline] stage
+[8mha:////4G7/BnUH3Ysob9Rftz2KWWH56AU3NObavHGFHt4BB93LAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] { (Step 7, Step 8)
+Stage "Step 7, Step 8" skipped due to earlier failure(s)
+[8mha:////4MH01/NPUtGF8Z6PXOCWShMSBHLvD4CznpZacYvWc+LqAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKPe7T23fj0WMib4AAAA=[0m[Pipeline] }
+[8mha:////4NaSJR42yCVfoYQwiHKUjkQJTyVo/g8VLO97SJdamRglAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKClBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fvKbXNb4AAAA=[0m[Pipeline] // stage
+[8mha:////4JadYP79Pby0J6LF0n5ipM7fUxfBX6AvRhSLNpY5tRmlAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfItztBtv8A2BwKHb0AAAA=[0m[Pipeline] }
+[8mha:////4AgUwNbukcB+fnvsG6Vp3h8eGr+1Tw0C5Uj9LeeKbv6hAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfIt3tBtvsA/gVtV70AAAA=[0m[Pipeline] // node
+[8mha:////4DRnUxFbxgwgbaE4/wRnajX8bp7/6gDPT7Qjok2Zelr7AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+ABvarvm9AAAA[0m[Pipeline] End of Pipeline
+groovy.lang.MissingPropertyException: No such property: stepmap for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:63)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onGetProperty(SandboxInterceptor.java:264)
+	at org.kohsuke.groovy.sandbox.impl.Checker$6.call(Checker.java:288)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedGetProperty(Checker.java:292)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.getProperty(SandboxInvoker.java:29)
+	at com.cloudbees.groovy.cps.impl.PropertyAccessBlock.rawGet(PropertyAccessBlock.java:20)
+	at WorkflowScript.GetStepNum(WorkflowScript:126)
+	at WorkflowScript.run(WorkflowScript:12)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.delegateAndExecute(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:133)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.executeSingleStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:660)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.catchRequiredContextForNode(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:402)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.catchRequiredContextForNode(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:400)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.executeSingleStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:659)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:279)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.toolsBlock(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:547)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.toolsBlock(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:546)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:269)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.withEnvBlock(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:446)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.withEnvBlock(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:445)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:268)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.withCredentialsBlock(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:484)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.withCredentialsBlock(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:483)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:267)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:299)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.inDeclarativeAgent(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:585)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.inDeclarativeAgent(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:584)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:296)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.stageInput(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:363)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.stageInput(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:362)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:265)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.inWrappers(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:612)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.inWrappers(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:611)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.evaluateStage(jar:file:/Users/tzheng/.jenkins/plugins/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/org/jenkinsci/plugins/pipeline/modeldefinition/ModelInterpreter.groovy:250)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.get(PropertyishBlock.java:74)
+	at com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.fixName(PropertyishBlock.java:66)
+	at sun.reflect.GeneratedMethodAccessor524.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:174)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:163)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:129)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:268)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:163)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$101(SandboxContinuable.java:34)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.lambda$run0$0(SandboxContinuable.java:59)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:58)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:182)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:332)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$200(CpsThreadGroup.java:83)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:244)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:232)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:131)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Finished: FAILURE

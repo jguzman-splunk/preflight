@@ -1,0 +1,129 @@
+Started by user [8mha:////4K2SMf4MTfLq/Ps8b+Er5LlYTHbJGpTcb/xprbIMo9dnAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IdiaRFBwWk0oEHgzOdhFoVoIf1rPwJC/d7YLLrRHmdAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] echo
+echo Step 1
+[8mha:////4F11/NgyRZjWIVpA3QISJYCH7b5Jngp5hApzPHZHLYeQAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KP1Anv6cDSveEvEnZFbljWu5BlOHy2qyq0u2TyxvIfAAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /Users/tzheng/.jenkins/workspace/preflight-pipeline
+[8mha:////4Gn5aVOO/MMG6uHJQoCp01q19uYcupWkp7KVUwCj2EzzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4AxVbroXKxuHfUNS0az65VaMIW036vPPHjkbUrD4yjLcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4Bw6UgjgUmNSHOJ5djn/z/17oQeXaJI6HdVWUPQvtpcFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Prerequisites)
+[8mha:////4PBWHzx/2z1c9rQmaZiEgjz7T2soak46zuQVuRUIYd7hAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] script
+[8mha:////4DSiBsGYf0J7SM2i17oe7zbICofyPx0IwPBYM8Z7joZdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] {
+[8mha:////4BPyq4yNopIGLV7ALNFYs7RwcQXPEn6Py0cbHSC+qf5jAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny3VaQ7T84V/SsvQAAAA==[0m[Pipeline] }
+[8mha:////4MCoL7zgUsoO7Pr7XHCiFjMlhoALP7p6k5BJbYCl/r/wAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KEzcQ4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AHk6T5r0AAAA=[0m[Pipeline] // script
+[8mha:////4ByBuzNVWGgbNrmF+AEyEwFN2C4dWyLbJ2LepdRU/p0NAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPXymMMb0AAAA=[0m[Pipeline] }
+[8mha:////4LDxqeiapgOsBtRr3fYW7D1oWfzUfHF9gL46rsLXx37BAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AHkw63u9AAAA[0m[Pipeline] // stage
+[8mha:////4Fma1ZJU29u+42dmHgUlxbKWw3doGqrTxU3pJUk7Wi9RAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvYHk1C8EAAAA=[0m[Pipeline] stage
+[8mha:////4JVveZc0F2eJZ++LOCJgWskJ8R5PT8cUstbFOWXw4zwdAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Step 1: FQDN Check)
+[8mha:////4El+S7C5K4Pw5obrrNOddmhxr8xiWMlOozw6+X9MrtKFAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] script
+[8mha:////4NxVff1D/QjwL7Ili3YNejShdrsvamz3VCu2mme8QdgYAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] {
+[8mha:////4O8hAA2y4/pt+FsxX9vnZj6wPUdyvKWw5EuHkJimpwv7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] echo
+Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs
+[8mha:////4HLRVhTvucM1uWFC5oCTg2srmd0ZCVoe7dMNwL2CBxfwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN1TuT7W+AAAA[0m[Pipeline] sh
++ ssh -tq -o 'BatchMode yes' localhost 'export TERM=vt100 && export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && cd ~/cloud/cloudworks-tools/preflight_step1_fqdncheck && go run main.go -stack a2asc'
+2019/01/10 14:22:15 Finding LastPass entry 'a2asc'
+2019/01/10 14:22:20 urlOut is: https://a2asc.splunkcloud.com/en-us/account/login?loginType=Splunk
+
+2019/01/10 14:22:20 url is :  https://a2asc.splunkcloud.com
+2019/01/10 14:22:24 lpId is:  8257274278457110895
+2019/01/10 14:22:24 Executing FQDN Check search: search index=_internal destHost=*.splunkcloud.com sourcetype=splunkd NOT host=*.splunkcloud.com earliest=-24h | stats dc(host) AS fwd_count by destHost
+2019/01/10 14:22:24 stack user is:  admin
+2019/01/10 14:22:29 FQDN Check search ID: 1547090549.15142
+
+2019/01/10 14:22:30 FQDN Check job is not complete.  Waiting 5 seconds...
+
+2019/01/10 14:22:36 {
+  "preview": false,
+  "init_offset": 0,
+  "messages": [
+    {
+      "type": "INFO",
+      "text": "Your timerange was substituted based on your search string"
+    }
+  ],
+  "fields": [
+    {
+      "name": "destHost",
+      "groupby_rank": "0"
+    },
+    {
+      "name": "fwd_count"
+    }
+  ],
+  "results": [
+    {
+      "destHost": "inputs1.a2asc.splunkcloud.com",
+      "fwd_count": "1"
+    }
+  ],
+  "highlighted": {}
+}
+2019/01/10 14:22:36 destHosts 0: inputs1.a2asc.splunkcloud.com | fwd_count: 1
+2019/01/10 14:22:36 Customer Forwarders Are Configured To Forward Events To Correct FQDNs
+[8mha:////4Mx2tz+z0GATUnqo211VT/2+pTNHqUzJUFxiEUfB7G3yAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] }
+[8mha:////4EoGCayHXh2V2QD5K9TYpEfkv4TM2cbug6F9TYQnJ34hAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] // script
+Post stage
+[8mha:////4ArvFwxpIewHR8T1qFCw6FW6BhFjZPF3UTi/51Qfthg7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRkagQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAcw+Qbk/5Kpr/wHvmGLDvgAAAA==[0m[Pipeline] echo
+
+[8mha:////4G3yVNdas343/SBpEAWlCbk1m/q0MPdv4oJ0oWSYa3PxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEFO/zRvgAAAA==[0m[Pipeline] }
+[8mha:////4E9j0Hx6YxZa1suF0RwJ0z/rkoma4LgF2eoodZnFsLoAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPys7/ru+AAAA[0m[Pipeline] // stage
+[8mha:////4JIKDuikiEgsqDrKq3YiwKac/vCOHzPH09cg7scFbQPOAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIaVCVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg6gZil39OZZvWLCB8cEAAAA=[0m[Pipeline] stage
+[8mha:////4NON2rFZB0+olVUMpT7P8Tdf8UOWf4R6NaXUhEjc0lyfAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] { (Step 2: Create the Stack Definition)
+[8mha:////4FQEAUWTpbKzzVyOLaV+4717Cpy4gmJsU99FehURXwfyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] withCredentials
+[8mha:////4NlUEAP0J/pjxqbhICKwTHvg5lGWLF144K2PJHP9XVYOAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] {
+[8mha:////4F8BT1MS2ztYenptR80IRxuQKFjoSzIs6rdXVdGaf2OCAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] script
+[8mha:////4CuhRBb2ZA2/ll2ZfwJadgnHsR4k2CP5PP4zKTP/CCyyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] {
+[8mha:////4EIbQVoR8Pl/BhKFbUs3ahZsRfu5ODC6zlb0cHm0Et6aAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICokRUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfewYmQ+b4AAAA=[0m[Pipeline] echo
+Step 2: Create the Stack Definition
+[8mha:////4E0W9jqklERiws4vFxrTjxlfWl6wwYzG6FkA1MFCfvnmAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+GVyAIcIAAAA=[0m[Pipeline] ansiColor
+[8mha:////4DRm9Euwx9FUi6EMzkAjojOqrMy9l35pQX6I5e4H4yKVAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4MYSZI1jaoq87TCiTBLNYhilnm0lc2r+aSomN33ID84dAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] sh
++ export TERM=vt100
++ TERM=vt100
++ export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/****/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
++ PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/****/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
++ cd /Users/****/cloud/cloudworks-tools
++ go run gocwb.go -mode migrate -preflight -stack a2asc -ticketnum CO-98037 -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword **** -oktapassword ****
+gocwb v1.3.0
+2019/01/10 14:22:44 Logging output to /tmp/a2asc-migrate-preflight-20190110_142244.log
+2019/01/10 14:22:44 Migration mode engaged.  Brace yourself...
+2019/01/10 14:22:44 Checking out branch master in /Users/****/cloud/terraform-infrastructure-definitions
+2019/01/10 14:22:52 Reading LastPass entry 'gocwb credcache key'
+2019/01/10 14:23:00 Reading credential cache from /tmp/gocwb-credcache-****.yaml
+2019/01/10 14:23:00 Locked on to pre-flight.  Relax...
+2019/01/10 14:23:00 Executing SkyNet search: | `migration_detail_go_output(a2asc)` | eval hybrid_search=if(hybrid_search=="unknown", "true", hybrid_search)
+2019/01/10 14:23:04 Error submitting search to SkyNet: [{ERROR Unauthorized}] (username or password is incorrect)
+exit status 1
+[8mha:////4GlTotr5xh6vYtCTQCNTIOvXSdB7fxnW2OJtWUetGV52AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfGxSHer4AAAA=[0m[Pipeline] }
+[8mha:////4BNfp9Ibo8Jc6tB2rs0TXT7DIJtg8+Lb7qv4DlaJLOtjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgEjVhSLvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4MQqyttIhj8xTzs/2RT/OfPXRhPWFxFKadsjOenrm3WVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGq5EauvgAAAA==[0m[Pipeline] }
+[8mha:////4EdYvv2nJLvV/KcYu7+QnFOxOFVNy1jqxZfOyz+/TE93AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQQNCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+a39c/vgAAAA==[0m[Pipeline] // script
+[8mha:////4KozLqRrMllbHlP6E6NahR1+vB16J9Aj/rdOqZ2cOprqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQQNCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w+pPIyDvgAAAA==[0m[Pipeline] }
+[8mha:////4P9xOWSjKoW3xjKsfepFMtt04FZASDNS71qzjn5nkIljAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAfk6b8b4AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4LuVF8pRWXTYzpv/ptHAtXkXxoO1KLGf9IRCLgWmOvcNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9NrcBNvgAAAA==[0m[Pipeline] }
+[8mha:////4BvyUwls/P4umU9tLa1dRQ1ZpOwikaPfThtv3vOkrL71AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRVAhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AFZjl1SvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JCBYKdsh4ECjN78r+3YdDzi/KRHVUwH+No9Qt7fA6t3AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTABWiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INf2YIRMEAAAA=[0m[Pipeline] stage
+[8mha:////4PWAljAN9Jz33vt2hU9w/va26uvv2s7c3fr9JxnNA/MiAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oBtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPBA4E38IAAAA=[0m[Pipeline] { (Step 3, Step 4)
+Stage "Step 3, Step 4" skipped due to earlier failure(s)
+[8mha:////4Isj1Bbf1RUuVSnk5rqxqflHcPS1xrWeW6DC2Bbx4F0zAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSxMqxsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs/cJ6nb/qfYN8SkFbr4AAAA=[0m[Pipeline] }
+[8mha:////4H4X0wdYYu8w3zUUIGD9Y0lSHd2NmcoxXCOce2M0HpeoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN/zO9Xa+AAAA[0m[Pipeline] // stage
+[8mha:////4Oz+9lf7XaPl38PY+Eynhfm1D52CGB6DR1uZ9ntCP6WDAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYTTgCgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvaSSZ38EAAAA=[0m[Pipeline] stage
+[8mha:////4Ohhge+DNzZr+bTjcAmRlGl5VoMSdrMF/IEbCMnMN0XRAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] { (Step 5: EIP Pre-Allocation with Jenkins)
+Stage "Step 5: EIP Pre-Allocation with Jenkins" skipped due to earlier failure(s)
+[8mha:////4I7chPPWRwDLFx1kukQqTxPQgvbsRanW91Jr8pXG1QyAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSUIAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N6GlcRC+AAAA[0m[Pipeline] }
+[8mha:////4D5n3ILzUzkwAyohAnEXohCIibn5ZuQS+WhtrOjDxx5vAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAaJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9M4rYBvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JhQn0D1csjAe6iF7Tc3ILtnXzdgZ3iETwnDwBNRcscEAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjilSIitZywwtMYowT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhThQNHJzmLvMTVeDmF0ucmJYn8JNMmOzrIhTBSs1HbS1NrjgprYwhJRwErB2mITKHl0DBvVmbupgkFXnTjmba+g8O0NHiBUNrOJ/IU5wvY6tonw5/krgHlgEDVDUe8+x/INwMy3r8EAAAA=[0m[Pipeline] stage
+[8mha:////4OTbB2Tzh4LyVY5TqcCQOmUHG/WofXCDlCw7gjoaQF3UAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDwMT42zCAAAA[0m[Pipeline] { (Step 6: Review Preflight Outcomes And Update JIRA)
+Stage "Step 6: Review Preflight Outcomes And Update JIRA" skipped due to earlier failure(s)
+[8mha:////4NZTPBpqZW/dT2dgp27Gq41JNvnYB3Lz8arL8y/L40fXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbNyxVU+6+AAAA[0m[Pipeline] }
+[8mha:////4K+HwcIsSr2EZ0ZR6egc99BqDeIhEGp/QRwmWLm46OHzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbNy40X2q+AAAA[0m[Pipeline] // stage
+[8mha:////4LqPhv+8dpFKQU2o7C42nEbdh42mTCaIjUsQvbB/0JWeAAAApR+LCAAAAAAAAP9tjTEOgkAURAcMha2lh1gqKmNlu6HxBCus6+Lmf9z9CJUn8mreQZTEyqnmTTJ5zxeKFLHn6FRn6eopNV71YXBzUyPH6znwqDo+qYYpcbCqtmPNrT0sWLNYLMlyrDTWlprAyZMTbHRn7qYMhlx5lDhvO43ctzc8kOnZLCbKF6aI7WVoE9PP81eAqRdklSCvqs+xeAPWjiY0wQAAAA==[0m[Pipeline] stage
+[8mha:////4KQi6UwdxtU2ru6mco2lz/AVk0yRN9Gxj1IqdrUGMx5LAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KgtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPlyKrR8IAAAA=[0m[Pipeline] { (Step 7, Step 8)
+Stage "Step 7, Step 8" skipped due to earlier failure(s)
+[8mha:////4E6Qbb93vpC9Y0zvHSoqdYHCyR/7oGBSFSKayNLC2WeCAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BiPTr3K+AAAA[0m[Pipeline] }
+[8mha:////4I2E/i0aEjKhr5MwRG9gFJikQvQc0nstjmt4pGriBe/CAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/Qg6NTExTq6ExS/AFhFK3qNApZNf5K/5D6JNnLzDzT13Oc8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DUww8Bq+AAAA[0m[Pipeline] // stage
+[8mha:////4M4nC90b+PbFNdNq9ilc9B4h1M0Gs9YVPHWEvvdA7I87AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJUFI5jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAdDvDM70AAAA=[0m[Pipeline] }
+[8mha:////4LeurPJGP/qQ5zjHwSDCnp8a8BwKgDgq4cw3H4ih50W7AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPPRtAz70AAAA=[0m[Pipeline] // node
+[8mha:////4ELl8KAAcVQkjmGSORFb1UuZv/JyIJwXQMb2ISzSOApkAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPuJdDG70AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

@@ -1,0 +1,635 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.29">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>STACK</name>
+          <description></description>
+          <value>vidyard</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>TICKETNUM</name>
+          <description></description>
+          <value>CO-98319</value>
+        </hudson.model.StringParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.1.18">
+          <name>AD_CREDENTIALS</name>
+          <description></description>
+          <value>AD_CREDS</value>
+          <isDefaultValue>true</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.1.18">
+          <name>OKTA_CREDENTIALS</name>
+          <description></description>
+          <value>OKTA_CREDS</value>
+          <isDefaultValue>true</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>START_STEP</name>
+          <description></description>
+          <value>Step 5</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IPADDRESS</name>
+          <description></description>
+          <value>localhost</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>STACK</string>
+        <string>TICKETNUM</string>
+        <string>AD_CREDENTIALS</string>
+        <string>OKTA_CREDENTIALS</string>
+        <string>START_STEP</string>
+        <string>IPADDRESS</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.12">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.3.2">
+      <stagesUUID>705e31de-1357-4ca7-bfe0-c382c7e62fbb</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.3.2">
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Prerequisites</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">if (startstep == 0){
+          echo &quot;Prerequisites&quot; 
+          sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV} &amp;&amp; ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\&quot;&quot;
+        }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs</name>
+              <post>
+                <conditions>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                    <condition>success</condition>
+                    <branch>
+                      <name>default</name>
+                      <steps>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          <name>echo</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>message</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string"></value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      </steps>
+                    </branch>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                </conditions>
+              </post>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">if (startstep &lt;= 1) {
+          echo &quot;Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs&quot; 
+          sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step1_fqdncheck &amp;&amp; go run main.go -stack ${STACK}\&quot;&quot; 
+         }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Step 2: Create the Stack Definition</name>
+              <post>
+                <conditions>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                    <condition>success</condition>
+                    <branch>
+                      <name>default</name>
+                      <steps>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          <name>echo</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>message</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string"></value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      </steps>
+                    </branch>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                </conditions>
+              </post>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                      <name>withCredentials</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                        <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$GStringValue">
+                          <value class="string">${[
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: &apos;AD_USER&apos;, passwordVariable: &apos;AD_PASSWORD&apos;),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: &apos;OKTA_USER&apos;, passwordVariable: &apos;OKTA_PASSWORD&apos;)
+    ]}</value>
+                        </value>
+                      </args>
+                      <children>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                          <name>script</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>scriptBlock</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string">if (startstep &lt;= 2) {
+          echo &quot;Step 2: Create the Stack Definition&quot;
+          ansiColor(&apos;xterm&apos;) { 
+          //sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV} &amp;&amp; go run gocwb.go -mode migrate -preflight -stack ${STACK} -ticketnum ${TICKETNUM} -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD} &amp;&amp; exit\&quot;&quot;
+          sh &quot;${shellENV} &amp;&amp; go run gocwb.go -mode migrate -preflight -stack ${STACK} -ticketnum ${TICKETNUM} -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD} &quot; 
+          }
+        }</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      </children>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Step 3, Step 4</name>
+              <post>
+                <conditions>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                    <condition>success</condition>
+                    <branch>
+                      <name>default</name>
+                      <steps>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          <name>echo</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>message</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string"></value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      </steps>
+                    </branch>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                </conditions>
+              </post>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                      <name>withCredentials</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                        <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$GStringValue">
+                          <value class="string">${[
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: &apos;AD_USER&apos;, passwordVariable: &apos;AD_PASSWORD&apos;),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: &apos;OKTA_USER&apos;, passwordVariable: &apos;OKTA_PASSWORD&apos;)
+    ]}</value>
+                        </value>
+                      </args>
+                      <children>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                          <name>script</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>scriptBlock</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string">if (startstep &lt;= 3) {
+            echo &quot;Step 3: Analyze Results and Review and Step 4: Define Sitemapping In Hiera&quot; 
+            sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step3_4_review_terraform_define_sitemapping &amp;&amp; go run main.go -stack ${STACK} -ticketnum ${TICKETNUM} -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD}; exit\&quot;&quot; 
+          }</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      </children>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Step 5: EIP Pre-Allocation with Jenkins</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">if (startstep &lt;= 4) { 
+          echo &quot;Step 5: EIP Pre-Allocation with Jenkins&quot; 
+          timeout(time:5, unit:&apos;MINUTES&apos;) {
+            input message: &quot;Have you checked Multisite is True Or False On Legacy Stack?&quot;, ok: &quot;Yes&quot;
+          }
+        }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Step 6: Review Preflight Outcomes And Update JIRA</name>
+              <post>
+                <conditions>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                    <condition>success</condition>
+                    <branch>
+                      <name>default</name>
+                      <steps>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          <name>echo</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>message</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string"></value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      </steps>
+                    </branch>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                </conditions>
+              </post>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">if (startstep &lt;= 5) {   
+             echo &quot;Step 6: Review Preflight Outcomes And Update JIRA&quot; 
+             sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step6_review_preflight &amp;&amp; go run main.go -stack ${STACK} -ticketnum ${TICKETNUM}\&quot;&quot; 
+           }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Step 7, Step 8</name>
+              <post>
+                <conditions>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                    <condition>success</condition>
+                    <branch>
+                      <name>default</name>
+                      <steps>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          <name>echo</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                            <arguments class="linked-hash-map">
+                              <entry>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <key>message</key>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string"></value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </entry>
+                            </arguments>
+                          </args>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      </steps>
+                    </branch>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                </conditions>
+              </post>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">if (startstep &lt;= 5) {
+             echo &quot;Step 7: Assign Canary IP and Step 8: Step 8. Determine Whether There Are Any Knowledge Objects Or Configuration Items That Are \&quot;At Risk\&quot; Of Being Lost As A Result Of Migration&quot; 
+             sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step7_8_assign_canaryip_check_risk &amp;&amp; go run main.go -stack ${STACK} -ticketnum ${TICKETNUM}\&quot;&quot; 
+           }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>705e31de-1357-4ca7-bfe0-c382c7e62fbb</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputAction plugin="pipeline-input-step@2.8">
+      <ids class="java.util.concurrent.CopyOnWriteArrayList"/>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <org.jenkinsci.plugins.workflow.support.steps.input.Rejection plugin="pipeline-input-step@2.8">
+          <userName>admin</userName>
+          <timestamp>1546478346541</timestamp>
+        </org.jenkinsci.plugins.workflow.support.steps.input.Rejection>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>265</queueId>
+  <timestamp>1546478332326</timestamp>
+  <startTime>1546478332333</startTime>
+  <result>ABORTED</result>
+  <duration>14763</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>ABORTED</result>
+    <script>def shellENV = &quot;export TERM=vt100 &amp;&amp; export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin &amp;&amp; cd ~/cloud/cloudworks-tools&quot;
+def currentStep
+def startstep
+def stepmap = [&apos;Step 0&apos;:0, &apos;Step 1&apos;:1, &apos;Step 2&apos;:2, &apos;Step 3,4&apos;:3, &apos;Step 5&apos;:4, &apos;Step 6&apos;:5, &apos;Step 7,8&apos;:6]
+echo &quot;echo ${params.START_STEP}&quot;
+for (each in mapToList(stepmap)){
+  if (params.START_STEP == each[0]){
+    startstep = each[1]
+  }  
+}
+pipeline { 
+  agent any 
+  stages{
+    stage(&apos;Prerequisites&apos;){ 
+      steps {
+        script{ 
+        if (startstep == 0){
+          echo &quot;Prerequisites&quot; 
+          sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV} &amp;&amp; ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false\&quot;&quot;
+        }
+        }
+//        sh &quot;ssh root@${IPADDRESS} \&quot;/var/root/autovpnroute &amp;&amp; exit \&quot;&quot;
+//        sh &apos;&apos;&apos;#!/bin/bash
+//             export TERM=vt100
+//        ]    export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/tzheng/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+//             . ~/.bash_profile 
+//              ~/cloud/cloudworks-tools/gocwbdeps.sh --noop=false
+//        &apos;&apos;&apos;      
+
+      } 
+    } 
+    stage(&apos;Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs&apos;){ 
+     steps { 
+      script{   
+         if (startstep &lt;= 1) {
+          echo &quot;Step 1: Determine If Customer Forwarders Are Configured To Forward Events To Correct FQDNs&quot; 
+          sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step1_fqdncheck &amp;&amp; go run main.go -stack ${STACK}\&quot;&quot; 
+         }
+       }
+     }  
+     post { 
+       success { 
+         echo &quot;&quot; 
+       } 
+     } 
+   } 
+
+    stage(&apos;Step 2: Create the Stack Definition&apos;){ 
+     steps { 
+       withCredentials([
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: &apos;AD_USER&apos;, passwordVariable: &apos;AD_PASSWORD&apos;),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: &apos;OKTA_USER&apos;, passwordVariable: &apos;OKTA_PASSWORD&apos;)
+    ]){
+        script{   
+        if (startstep &lt;= 2) {
+          echo &quot;Step 2: Create the Stack Definition&quot;
+          ansiColor(&apos;xterm&apos;) { 
+          //sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV} &amp;&amp; go run gocwb.go -mode migrate -preflight -stack ${STACK} -ticketnum ${TICKETNUM} -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD} &amp;&amp; exit\&quot;&quot;
+          sh &quot;${shellENV} &amp;&amp; go run gocwb.go -mode migrate -preflight -stack ${STACK} -ticketnum ${TICKETNUM} -buildenv lve -customertype Customer -caserver cloud-ansible-us-east-1.splunkcloud.com -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD} &quot; 
+          }
+        }
+        }
+     }
+     }  
+     post { 
+       success { 
+         echo &quot;&quot; 
+       } 
+     } 
+    }
+    stage(&apos;Step 3, Step 4&apos;){ 
+     steps {
+       withCredentials([
+          usernamePassword(credentialsId: params.AD_CREDENTIALS, usernameVariable: &apos;AD_USER&apos;, passwordVariable: &apos;AD_PASSWORD&apos;),
+          usernamePassword(credentialsId: params.OKTA_CREDENTIALS, usernameVariable: &apos;OKTA_USER&apos;, passwordVariable: &apos;OKTA_PASSWORD&apos;)
+    ]){        
+         script{
+          if (startstep &lt;= 3) {
+            echo &quot;Step 3: Analyze Results and Review and Step 4: Define Sitemapping In Hiera&quot; 
+            sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step3_4_review_terraform_define_sitemapping &amp;&amp; go run main.go -stack ${STACK} -ticketnum ${TICKETNUM} -adpassword ${AD_PASSWORD} -oktapassword ${OKTA_PASSWORD}; exit\&quot;&quot; 
+          }
+        }
+    }
+     }  
+     post { 
+       success { 
+         echo &quot;&quot; 
+       } 
+     } 
+    }
+    stage(&apos;Step 5: EIP Pre-Allocation with Jenkins&apos;){ 
+      steps {
+        script {
+        if (startstep &lt;= 4) { 
+          echo &quot;Step 5: EIP Pre-Allocation with Jenkins&quot; 
+          timeout(time:5, unit:&apos;MINUTES&apos;) {
+            input message: &quot;Have you checked Multisite is True Or False On Legacy Stack?&quot;, ok: &quot;Yes&quot;
+          }
+        }
+        }
+      } 
+    }
+    stage(&apos;Step 6: Review Preflight Outcomes And Update JIRA&apos;){ 
+     steps { 
+         script{
+           if (startstep &lt;= 5) {   
+             echo &quot;Step 6: Review Preflight Outcomes And Update JIRA&quot; 
+             sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step6_review_preflight &amp;&amp; go run main.go -stack ${STACK} -ticketnum ${TICKETNUM}\&quot;&quot; 
+           }
+        }
+    }  
+     post { 
+       success { 
+         echo &quot;&quot; 
+       } 
+     } 
+    }
+    stage(&apos;Step 7, Step 8&apos;){ 
+     steps { 
+         script{
+           if (startstep &lt;= 5) {
+             echo &quot;Step 7: Assign Canary IP and Step 8: Step 8. Determine Whether There Are Any Knowledge Objects Or Configuration Items That Are \&quot;At Risk\&quot; Of Being Lost As A Result Of Migration&quot; 
+             sh &quot;ssh -tq -o \&quot;BatchMode yes\&quot; ${IPADDRESS} \&quot;${shellENV}/preflight_step7_8_assign_canaryip_check_risk &amp;&amp; go run main.go -stack ${STACK} -ticketnum ${TICKETNUM}\&quot;&quot; 
+           }
+        }
+     }  
+     post { 
+       success { 
+         echo &quot;&quot; 
+       } 
+     } 
+  }
+}
+}
+
+@NonCPS
+List&lt;List&lt;?&gt;&gt; mapToList(Map map) {
+  return map.collect { it -&gt;
+    [it.key, it.value]
+  }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>381810797</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>4596299936</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3754373830</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>1622557006</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>633246894</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>73</iota>
+    <head>1:73</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

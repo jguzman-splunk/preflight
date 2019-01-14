@@ -1,0 +1,11 @@
+commit 55c022f166151f57edf0f46125fc576a2c4ff7c6
+tree f0310917dceb7d47b4b5f94fe8e77b689c51da86
+parent 89d5e65f3db2ebd42a5ac8b80f2cd278480bfd0e
+author Tom Zheng <tzheng@splunk.com> 2019-01-10 15:15:16 +1100
+committer Tom Zheng <tzheng@splunk.com> 2019-01-10 15:15:16 +1100
+
+    comment out call remote jenkins build
+
+
+
+:100644 100644 a3ed9f5c45962f1f4c011bb82ec35b057f732271 6b1abe16aea2bf0600b8cf533807a9b8b8b1af7e M	Jenkinsfile-preflight
